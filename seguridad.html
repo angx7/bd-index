@@ -22,6 +22,31 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        table tr,
+        td,
+        th {
+            border: 1px solid;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+        th {
+            background-color: azure;
+        }
+
+        .imagen {
+            display: flex;
+
+        }
+
+        .img-1 {
+            padding-left: 90px;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,8 +66,8 @@
                         <a href="cloud.html" class="nav-item nav-link">Cloud</a>
                         <a href="caracteristicas.html" class="nav-item nav-link">Características</a>
                         <a href="modelos.html" class="nav-item nav-link">Modelos</a>
-                        <a href="proveedores.html" class="nav-item nav-link active">Proveedores</a>
-                        <a href="seguridad.html" class="nav-item nav-link">Seguridad</a>
+                        <a href="proveedores.html" class="nav-item nav-link">Proveedores</a>
+                        <a href="seguridad.html" class="nav-item nav-link active">Seguridad</a>
                         <a href="contact.html" class="nav-item nav-link">DBaaS</a>
                     </div>
                 </div>
@@ -56,11 +81,11 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Proveedores</h3>
+                <h3 class="display-4 text-white text-uppercase">Seguridad</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Proveedores</p>
+                    <p class="m-0 text-uppercase">Seguridad</p>
                 </div>
             </div>
         </div>
@@ -80,50 +105,59 @@
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5">
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Proveedores de la nube</h6>
-                        <h1 class="mb-3">Proveedores de la nube</h1>
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Manejo de la Segurirdad en
+                            la nube</h6>
+                        <h1 class="mb-3">Manejo de la Segurirdad en la nube</h1>
                         <p>
-                            <strong> ¿Qué es un proveedor de servicios de nube?</strong> <br>
-                            Los proveedores de servicios de nube son empresas que establecen nubes públicas, gestionan
-                            nubes privadas u ofrecen recursos de cloud computing (también llamados servicios de cloud
-                            computing) según se soliciten, lo cual incluye la infraestructura como servicio (IaaS), la
-                            plataforma como servicio (PaaS) y el software como servicio (SaaS). Los servicios de nube
-                            pueden reducir los costos de los procesos empresariales, en comparación con las soluciones
-                            de TI que se implementan en las instalaciones.
-                            Por lo general, las nubes no se emplean como una solución de infraestructura independiente,
-                            sino como parte de la <a
-                                href="https://www.redhat.com/es/topics/cloud-computing/what-is-hybrid-cloud"
-                                target="_blank">nube
-                                híbrida</a>.
-
-                        </p>
-                        <p><strong>Tipos de proveedores de servicios en la nube</strong><br>
-                            Los proveedores de servicios de comunicaciones ofrecen varios servicios, pero por lo general
-                            se incluyen en tres tipos de proveedores de servicios en la nube:
-
-                        </p>
-                        <p>
-                            <strong>1. Proveedores de infraestructura como servicio</strong><br>
-                            Las soluciones de infraestructura como servicio (IaaS) permiten acceder a los componentes de
-                            la infraestructura de TI que habría en tu centro de datos sin tener que aprovisionar,
-                            configurar ni gestionar los tuyos. Esto incluye recursos como computación, redes,
-                            almacenamiento, gestión de datos, virtualización y sistemas operativos.
-                        </p>
-                        <p>
-                            <strong>2. Proveedores de plataformas como servicio</strong><br>
-                            Las soluciones de PaaS se basan en IaaS y proporcionan herramientas y servicios para crear e
-                            implementar aplicaciones. PaaS incorpora sistemas operativos, middleware y entornos de
-                            ejecución en la pila de aplicaciones. Además, gestiona cualquier hardware u otro recurso
-                            relacionado con la infraestructura subyacente.
-                        </p>
-                        <p>
-                            <strong>3. Proveedores de software como servicio</strong><br>
-                            Las soluciones de SaaS son quizá las más conocidas y conforman los servicios de mayor
-                            crecimiento del mercado de la nube. Los CSPs proporcionan aplicaciones listas para usar y se
-                            encargan de mantener y gestionar todo el proceso, desde el hardware y el mantenimiento hasta
-                            el desarrollo, el escalado y la entrega. Por ejemplo, es probable que uses muchas de las
-                            aplicaciones de productividad de SaaS de Google Workspace al día, como Gmail, Calendar,
-                            Documentos y Drive.
+                        <table>
+                            <tr>
+                                <th>Modelo de servicio de computación en la nube</th>
+                                <th>Tú responsabilidad</th>
+                                <th>Responsabilidad del CSP</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Infraestructura como servicio (laaS)</p>
+                                </td>
+                                <td>
+                                    <p>Protege tus datos, aplicaciones, controles de red virtual, sistema operativo y
+                                        acceso de usuario.
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto
+                                        y la red física,
+                                        incluidos todos los parches y la configuración.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Plataforma como servicio (PaaS)</p>
+                                </td>
+                                <td>
+                                    <p>Protege tus datos, el acceso de los usuarios y las aplicaciones.</p>
+                                </td>
+                                <td>
+                                    <p>El proveedor de servicios en la nube protege el procesamiento, el almacenamineto,
+                                        la red física,
+                                        los controles de redes virtuales y el sistema operativo.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Software como servicio (SaaS)</p>
+                                </td>
+                                <td>
+                                    <p>Eres responsable de proteger tus datos y el acceso de los usuarios.</p>
+                                </td>
+                                <td>
+                                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto,
+                                        la red física,
+                                        los controles de redes virtuales, el sistema operativo, las aplicaciones y el
+                                        middleware.</p>
+                                </td>
+                            </tr>
+                        </table>
                         </p>
                         <br><br>
                         <a href="https://youtu.be/WafscGYo878?si=3w3XKIDJsuON-m7q" target="_blank"
@@ -219,6 +253,60 @@
     </div>
     <!-- Blog End -->
 
+    <!-- Gerardo -->
+    <h1>Manejo de la Segurirdad en la nube</h1>
+    <br>
+    <div class="imagen">
+        <table>
+            <tr>
+                <th>Modelo de servicio de computación en la nube</th>
+                <th>Tú responsabilidad</th>
+                <th>Responsabilidad del CSP</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Infraestructura como servicio (laaS)</p>
+                </td>
+                <td>
+                    <p>Protege tus datos, aplicaciones, controles de red virtual, sistema operativo y acceso de usuario.
+                    </p>
+                </td>
+                <td>
+                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto y la red física,
+                        incluidos todos los parches y la configuración.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Plataforma como servicio (PaaS)</p>
+                </td>
+                <td>
+                    <p>Protege tus datos, el acceso de los usuarios y las aplicaciones.</p>
+                </td>
+                <td>
+                    <p>El proveedor de servicios en la nube protege el procesamiento, el almacenamineto, la red física,
+                        los controles de redes virtuales y el sistema operativo.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Software como servicio (SaaS)</p>
+                </td>
+                <td>
+                    <p>Eres responsable de proteger tus datos y el acceso de los usuarios.</p>
+                </td>
+                <td>
+                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto, la red física,
+                        los controles de redes virtuales, el sistema operativo, las aplicaciones y el middleware.</p>
+                </td>
+            </tr>
+        </table>
+
+        <img class="img-1"
+            src="https://th.bing.com/th/id/OIP.fvG7sVH_NJKb3orU8EWE7wHaEH?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt="">
+    </div>
+    <!-- Fin gerardo -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
