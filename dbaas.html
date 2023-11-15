@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TENDENCIAS TECNOLÓGICAS Y BASES DE DATOS - Cloud</title>
+    <title>TENDENCIAS TECNOLÓGICAS Y BASES DE DATOS - DBaaS</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -23,28 +23,55 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        table tr,
-        td,
-        th {
-            border: 1px solid;
+        .class-container {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .text {
+            margin-top: 20px;
+            width: 100%;
         }
 
         table {
+            border-collapse: collapse;
             width: 100%;
-            text-align: center;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
         }
 
         th {
-            background-color: azure;
+            background-color: #f2f2f2;
         }
 
-        .imagen {
-            display: flex;
-
+        .image {
+            margin-top: 20px;
+            width: 100%;
         }
 
-        .img-1 {
-            padding-left: 90px;
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            color: #555;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -67,8 +94,8 @@
                         <a href="caracteristicas.html" class="nav-item nav-link">Características</a>
                         <a href="modelos.html" class="nav-item nav-link">Modelos</a>
                         <a href="proveedores.html" class="nav-item nav-link">Proveedores</a>
-                        <a href="seguridad.html" class="nav-item nav-link active">Seguridad</a>
-                        <a href="dbaas.html" class="nav-item nav-link">DBaaS</a>
+                        <a href="seguridad.html" class="nav-item nav-link">Seguridad</a>
+                        <a href="dbaas.html" class="nav-item nav-link active">DBaaS</a>
                     </div>
                 </div>
             </nav>
@@ -81,146 +108,115 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Seguridad</h3>
+                <h3 class="display-4 text-white text-uppercase">DBaaS</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Seguridad</p>
+                    <p class="m-0 text-uppercase">DBaaS</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100"
-                            src="https://4.bp.blogspot.com/-M5N2Z_3OyEM/Vng4ldIEQvI/AAAAAAAAQV4/d5aa93be2gg/s1600/open-hybrid-cloud-red-hat.jpg"
-                            style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Manejo de la Segurirdad en
-                            la nube</h6>
-                        <h1 class="mb-3">Manejo de la Segurirdad en la nube</h1>
-                        <p>
-                        <table>
-                            <tr>
-                                <th>Modelo de servicio de computación en la nube</th>
-                                <th>Tú responsabilidad</th>
-                                <th>Responsabilidad del CSP</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Infraestructura como servicio (laaS)</p>
-                                </td>
-                                <td>
-                                    <p>Protege tus datos, aplicaciones, controles de red virtual, sistema operativo y
-                                        acceso de usuario.
-                                    </p>
-                                </td>
-                                <td>
-                                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto
-                                        y la red física,
-                                        incluidos todos los parches y la configuración.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Plataforma como servicio (PaaS)</p>
-                                </td>
-                                <td>
-                                    <p>Protege tus datos, el acceso de los usuarios y las aplicaciones.</p>
-                                </td>
-                                <td>
-                                    <p>El proveedor de servicios en la nube protege el procesamiento, el almacenamineto,
-                                        la red física,
-                                        los controles de redes virtuales y el sistema operativo.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Software como servicio (SaaS)</p>
-                                </td>
-                                <td>
-                                    <p>Eres responsable de proteger tus datos y el acceso de los usuarios.</p>
-                                </td>
-                                <td>
-                                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto,
-                                        la red física,
-                                        los controles de redes virtuales, el sistema operativo, las aplicaciones y el
-                                        middleware.</p>
-                                </td>
-                            </tr>
-                        </table>
-                        </p>
-                        <br><br>
-                        <a href="https://youtu.be/WafscGYo878?si=3w3XKIDJsuON-m7q" target="_blank"
-                            class="btn btn-primary mt-1">Ver Vídeo</a>
-                    </div>
-                </div>
+
+
+    <!-- Max code -->
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Part-7</title>
+
+    </head>
+
+    <body>
+        <div class="class-container">
+            <div class="text">
+                <h1>¿Qué es una base de datos en la nube?</h1>
+                <p>Una base de datos en la nube es una base de datos que se implementa, entrega y accede a la nube. Las
+                    bases de datos en la nube organizan y almacenan datos estructurados, no estructurados y
+                    semiestructurados, al igual que las bases de datos locales tradicionales. Sin embargo, también
+                    proporcionan muchos de los mismos beneficios de la computación en la nube, incluida la velocidad, la
+                    escalabilidad, la agilidad y los costos reducidos.</p>
+            </div>
+
+            <div class="image">
+                <img width="100%" src="https://appmaster.io/api/_files/cK2TuMtQg6tWaYHhpX6zBD/download/" alt="">
             </div>
         </div>
-    </div>
-    <!-- About End -->
 
-    <!-- Destination Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Imagenes</h6>
-                <h1>Imagenes relacionadas</h1>
+        <div class="class-container">
+            <h2>Consideraciones sobre bases de datos en la nube</h2>
+            <div class="text">
+                <p>Si bien los beneficios de las bases de datos en la nube pueden ayudar a las organizaciones a
+                    enfrentar muchos obstáculos modernos que impiden el crecimiento y la transformación digital, hay
+                    algunas consideraciones comunes sobre las bases de datos en la nube que debes tener en cuenta cuando
+                    planificas la migración a la nube.</p>
+                <ul>
+                    <li>Compromiso con un solo proveedor</li>
+                    <li>Dificultad para integrar datos con otros sistemas</li>
+                    <li>Migraciones complejas y largas</li>
+                    <li>Subestimar los costos de la nube</li>
+                    <li>Posibilidad del tiempo de inactividad de la conexión</li>
+                    <li>Problemas de seguridad de Cloud</li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid"
-                            src="https://cdn-3.expansion.mx/dims4/default/0f47bba/2147483647/strip/true/crop/1449x724+0+0/resize/1200x600!/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F63%2F89%2F607189a84a748b12497afaae77c5%2Fistock-519183908.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid"
-                            src="https://realestatemarket.com.mx/images/2022/10-octubre/0510/servicios-de-computo-en-la-nube-g.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid"
-                            src="https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2017/07/26160321/ComputacionNube1200.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid"
-                            src="https://mlfk3cv5yvnx.i.optimole.com/cb:tKi6.3034a/w:auto/h:auto/q:mauto/f:best/https://www.ninjaone.com/wp-content/uploads/2022/10/BaaS_Cloud_BlogImage.png"
-                            alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="https://www.teamnet.com.mx/hubfs/Cloud-Pymes.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid"
-                            src="https://palabrasclaras.mx/wp-content/uploads/2019/01/Inteligencia-Artificial.jpg"
-                            alt="">
-                    </div>
-                </div>
+
+            <div class="image">
+                <img width="100%"
+                    src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_591,h_332/https://ce.entel.cl/wp-content/uploads/2023/05/que-es-el-almacenamiento-en-la-nube-para-que-sirve.jpg"
+                    alt="">
             </div>
         </div>
-    </div>
 
+        <div class="class-container">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <h2>Ventajas sobre las bases de datos en la nube</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Mayor agilidad y escalabilidad</td>
+                    <td>
+                        Puedes iniciar una nueva base de datos en la nube o retirarla en minutos. Esto te permite
+                        probar, poner en funcionamiento y validar ideas nuevas más rápido. Además, las bases de datos en
+                        la nube pueden escalar de forma dinámica a medida que las aplicaciones crecen y brindan un
+                        rendimiento coherente con cargas altas.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Datos seguros y protegidos</td>
+                    <td>
+                        Los proveedores de servicios en la nube invierten en las mejores tecnologías y expertos para
+                        ofrecer varias capas de protección y políticas de seguridad centralizadas que pueden ayudar a
+                        proteger los datos de los clientes sin ralentizar la innovación.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mejor confiabilidad</td>
+                    <td>
+                        Las plataformas en la nube, incluidas las bases de datos en la nube, vienen con una serie de
+                        características integradas diseñadas para mantener una conectividad constante y cumplir con los
+                        ANS, incluida la alta disponibilidad, las copias de seguridad automáticas y la recuperación ante
+                        desastres sólida.
+                    </td>
+                </tr>
+            </table>
+            <tr>
+            <tr>
+
+            </tr>
+            </tr>
+
+        </div>
+    </body>
+
+    </html>
+    <!-- Fin max code-->
 
     <!-- Blog Start -->
     <div class="container-fluid py-5">
@@ -232,9 +228,8 @@
             <div class="row pb-3">
                 <div class="col-lg-6 col-md-6 mb-4 pb-2">
                     <div class="blog-item">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/NrnQHOgI8Fk?si=959oLvV8Esjyy3v2"
-                            title="YouTube video player" frameborder="0"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BGNzMb08ERs"
+                            title="Tu primera base de datos en la nube | Tus primeros pasos en la nube" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
@@ -252,61 +247,6 @@
         </div>
     </div>
     <!-- Blog End -->
-
-    <!-- Gerardo -->
-    <h1>Manejo de la Segurirdad en la nube</h1>
-    <br>
-    <div class="imagen">
-        <table>
-            <tr>
-                <th>Modelo de servicio de computación en la nube</th>
-                <th>Tú responsabilidad</th>
-                <th>Responsabilidad del CSP</th>
-            </tr>
-            <tr>
-                <td>
-                    <p>Infraestructura como servicio (laaS)</p>
-                </td>
-                <td>
-                    <p>Protege tus datos, aplicaciones, controles de red virtual, sistema operativo y acceso de usuario.
-                    </p>
-                </td>
-                <td>
-                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto y la red física,
-                        incluidos todos los parches y la configuración.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Plataforma como servicio (PaaS)</p>
-                </td>
-                <td>
-                    <p>Protege tus datos, el acceso de los usuarios y las aplicaciones.</p>
-                </td>
-                <td>
-                    <p>El proveedor de servicios en la nube protege el procesamiento, el almacenamineto, la red física,
-                        los controles de redes virtuales y el sistema operativo.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Software como servicio (SaaS)</p>
-                </td>
-                <td>
-                    <p>Eres responsable de proteger tus datos y el acceso de los usuarios.</p>
-                </td>
-                <td>
-                    <p>El proveedor de servicios en la nube protege el procesamineto, el almacenamineto, la red física,
-                        los controles de redes virtuales, el sistema operativo, las aplicaciones y el middleware.</p>
-                </td>
-            </tr>
-        </table>
-
-        <img class="img-1"
-            src="https://th.bing.com/th/id/OIP.fvG7sVH_NJKb3orU8EWE7wHaEH?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            alt="">
-    </div>
-    <!-- Fin gerardo -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
